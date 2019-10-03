@@ -8,3 +8,8 @@ ajaxPromise.then(
 	response => {}
 )
 ```
+
+```
+Assistant.newLocStorage.setStorage('abc', '123');
+
+```
