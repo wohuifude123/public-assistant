@@ -3,7 +3,20 @@
 > Author: 刘建
 
 ```
-let ajaxPromise = Assistant.requestAjax(requestParams);
+let requestParams = {
+	url: GlobalUrl.readRoadAllUrl,
+    data: {
+    	appid: "cmp",
+        token: 0,
+        data: {
+        	roadbookId: roadbookId,
+        	roadbookCode: "RB000133"
+        }
+    },
+    method: "post"
+};
+
+let ajaxPromise = _this.$ASSISTANT.requestAjax(requestParams);
 ajaxPromise.then(
 	response => {}
 )
